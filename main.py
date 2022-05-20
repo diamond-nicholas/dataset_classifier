@@ -6,4 +6,5 @@ st.write("""
 which one is the best
 """)
 
-st.selectbox('Select Dataset', ("Iris", "Breast Cancer", "Wine Dataset"))
+dataset_name = st.sidebar.selectbox('Select Dataset', ("Iris", "Breast Cancer", "Wine Dataset"))
+classifier_name = st.sidebar.selectbox('Select Classifier', ("KNN", "SVM", "Random Forest"))
